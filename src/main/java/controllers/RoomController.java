@@ -1,6 +1,7 @@
 package controllers;
 
 import model.Room;
+import model.Rooms;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,8 +17,8 @@ import java.util.List;
 
 public class RoomController {
 
-    @RequestMapping(value = "/getAllRooms", method = RequestMethod.GET, headers="Accept=application/json")
-    public List<Room> getAllRooms() {
+    @RequestMapping(value = "/getAllRooms", method = RequestMethod.GET)
+    public Rooms getAllRooms() {
         List<Room> rooms = new ArrayList<Room>();
         Room r1 = new Room("asd", 1);
         Room r2 = new Room("weqe", 2);
@@ -25,6 +26,9 @@ public class RoomController {
         rooms.add(r1);
         rooms.add(r2);
 
-        return rooms;
+        Rooms rooms1 = new Rooms();
+        rooms1.setAllRooms(rooms);
+
+        return rooms1;
     }
 }
