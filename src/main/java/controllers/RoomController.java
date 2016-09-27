@@ -1,7 +1,7 @@
 package controllers;
 
-import model.Room;
-import model.Rooms;
+import entity.Room;
+import entity.Rooms;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,6 @@ import java.util.List;
  */
 
 @RestController
-
 public class RoomController {
 
     @RequestMapping(value = "/getAllRooms", method = RequestMethod.GET)
