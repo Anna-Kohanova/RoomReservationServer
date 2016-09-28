@@ -1,4 +1,4 @@
-package model;
+package entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,8 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Room object
+ * Room object.
  * Created by Ania on 20.09.2016.
+ * Set Hibernate annotations on 28.09.2016.
  */
 @Entity
 @Table(name="all_rooms")

@@ -1,13 +1,14 @@
 package service;
 
 import dao.RoomDAO;
-import model.Room;
+import entity.Room;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
+ * Spring service implementation for using Hibernate DAO to work with Room objects.
  * Created by Ania on 28.09.2016.
  */
 

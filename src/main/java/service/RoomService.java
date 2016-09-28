@@ -1,10 +1,11 @@
 package service;
 
-import model.Room;
+import entity.Room;
 
 import java.util.List;
 
 /**
+ * Spring Service interface.
  * Created by Ania on 28.09.2016.
  */
 public interface RoomService {

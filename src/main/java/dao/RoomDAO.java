@@ -1,10 +1,11 @@
 package dao;
 
-import model.Room;
+import entity.Room;
 
 import java.util.List;
 
 /**
+ * Room Hibernate DAO interface.
  * Created by Ania on 28.09.2016.
  */
 public interface RoomDAO {
